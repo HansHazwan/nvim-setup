@@ -3,6 +3,7 @@ require("user.core.keymap")
 require("user.core.copy")
 require("user.plugins.colorscheme")
 require("user.plugins.lualine")
+require("user.plugins.lspconfig")
 
 local ensure_packer = function()
   local fn = vim.fn
@@ -33,6 +34,8 @@ return require('packer').startup(function(use)
       opt = true,
     }
   }
+
+  use "neovim/nvim-lspconfig"
 
   if packer_bootstrap then
     require('packer').sync()
