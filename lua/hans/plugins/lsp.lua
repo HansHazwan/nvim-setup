@@ -5,7 +5,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
   },
   config = function()
-    -- require("hans.lsp.mason")
-    -- require("hans.lsp.lspconfig")
+    require("hans.lsp.mason")
+    require("hans.lsp.lspconfig")
   end,
 }
